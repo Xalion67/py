@@ -7,9 +7,3 @@ def count_element(list):
     if len(list) == 1:
         return 1
     return 1 + count_element(list[1:])
-
-
-# Work example
-# Length of the array = 7
-list = [1, 2, 3, 4, 5, 6, 7]
-print('Length array ' + str(list) + ' = ' + str(count_element(list)))
