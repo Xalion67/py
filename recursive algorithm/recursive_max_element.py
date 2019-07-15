@@ -9,7 +9,3 @@ def max_element(list):
         return list[0]
     max = max_element(list[1:])
     return list[0] if list[0] > max else max
-
-
-list = [56, 345, 563, 23, 56, 43]
-print('Maximum element in array ' + str(list) + ' = ' + str(max_element(list)))
