@@ -21,11 +21,3 @@ def selection_sort(array):
         smallest_index = find_smallest(array)
         sorted_array.append(array.pop(smallest_index))
     return sorted_array
-
-
-# Work example
-source_array = [156, 34, 845, 329, 156, 6, 3, 56, 2, 45, 1, 230, 0]
-print('Source array >> ' + str(source_array))
-
-sorted_array = selection_sort(source_array)
-print('Sorted array >> ' + str(sorted_array))
