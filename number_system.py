@@ -49,8 +49,8 @@ def dec_to_hex(decimal_number):
         decimal_number = (decimal_number - hex) // 16
         if hex >= 10:
             hex_number = hex_char[hex] + hex_number
-            continue
-        hex_number = str(hex) + hex_number
+        else:
+            hex_number = str(hex) + hex_number
 
     return hex_number
 
@@ -65,8 +65,8 @@ def hex_to_dec(hex_number):
     for hex in hex_number:
         if hex in hex_char:
             hex_list.append(hex_char[hex])
-            continue
-        hex_list.append(int(hex))
+        else:
+            hex_list.append(int(hex))
 
     decimal_number = 0
     for hex_position, hex in enumerate(reversed(hex_list)):
