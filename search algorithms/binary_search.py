@@ -1,6 +1,3 @@
-# The function searches the index of an element in an array.
-
-
 def binary_search(item, array):
     low = 0
     high = len(array) - 1
