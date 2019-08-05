@@ -16,6 +16,7 @@ def generate_password(len):
         password += chr(randint(33, 126))
 
     click.echo('Your password: ' + GREEN + password)
+
     # Копируем пароль в буфер обмена
     buffer.copy(password)
     click.echo('Password copied to clipboard' + END_GREEN + '\n')
