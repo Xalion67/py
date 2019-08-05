@@ -1,4 +1,5 @@
 # The function finds the smallest element in the array and returns its index
+
 def find_smallest(array):
     smallest = array[0]
     smallest_index = 0
@@ -15,6 +16,7 @@ def find_smallest(array):
 # element in the source array.
 #
 # Then, pushes it from the source array into the sorted
+
 def selection_sort(array):
     sorted_array = []
     for i in range(len(array)):
